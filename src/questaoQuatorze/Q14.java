@@ -49,6 +49,7 @@ public class Q14 extends UtilsTools {
                     System.out.println("O número é menor. Tente novamente!");
                 } else if (this.userB == this.userA) {
                     System.out.println("O número é igual!");
+                    cont = 5;
                 } else if (this.userB == this.userA - 1 || this.userB == this.userA + 1) {
                     System.out.println("TÁ QUENTE!!!");
                 }
