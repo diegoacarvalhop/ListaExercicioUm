@@ -39,25 +39,29 @@ public class Q12 {
     private void calculateWeightPlanet(double weight, int planet) {
         switch (planet) {
             case 1:
-                this.weightPlanet = weight * Q12.MERCURY;
+                this.weightPlanet = (weight / 10) * Q12.MERCURY;
                 break;
             case 2:
-                this.weightPlanet = weight * Q12.VENUS;
+                this.weightPlanet = (weight / 10) * Q12.VENUS;
                 break;
             case 3:
-                this.weightPlanet = weight * Q12.MARS;
+                this.weightPlanet = (weight / 10) * Q12.MARS;
                 break;
             case 4:
-                this.weightPlanet = weight * Q12.JUPITER;
+                this.weightPlanet = (weight / 10) * Q12.JUPITER;
                 break;
             case 5:
-                this.weightPlanet = weight * Q12.SATURN;
+                this.weightPlanet = (weight / 10) * Q12.SATURN;
                 break;
             case 6:
-                this.weightPlanet = weight * Q12.URANUS;
+                this.weightPlanet = (weight / 10) * Q12.URANUS;
                 break;
-            default:
-                System.out.println("O seu peso no planeta escolhido é: " + this.weightPlanet);
         }
+        System.out.println("O seu peso no planeta escolhido é: " + this.weightPlanet);
+    }
+
+    public static void main(String[] args) {
+        Q12 q = new Q12();
+        q.getWeight();
     }
 }
