@@ -60,8 +60,4 @@ public class Q12 {
         System.out.println("O seu peso no planeta escolhido é: " + this.weightPlanet);
     }
 
-    public static void main(String[] args) {
-        Q12 q = new Q12();
-        q.getWeight();
-    }
 }
